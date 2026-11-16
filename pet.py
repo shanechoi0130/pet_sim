@@ -1,27 +1,4 @@
-
-        return True
-
-    def get_mood(self):
-        self.update_mood()
-        return self.mood
-
-    def update_mood(self):
-        if self.hunger >= 80:
-            self.mood = ("Very Hungry", "😠")
-        if self.energy <= 15:
-            self.mood = ("Very Tired", "🫩")
-        if self.happiness <= 20:
-            self.mood = ("Sad and Lonely", "🥺")
-        if self.happiness >= 80:
-            self.mood = ("Super Happy", "😍")
-        else:
-            self.mood = ("Normal", "🙂")
-        return self.mood
-
-    def pass_time(self):
-        self.energy = self.energy - 3
-        self.hunger = self.hunger + 5
-        self.happiness = self.happiness - 2class Pet:
+class Pet:
     def __init__(self, name, pet_type):
         self.name = name
         self.pet_type = pet_type
