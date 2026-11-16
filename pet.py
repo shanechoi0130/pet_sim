@@ -35,12 +35,12 @@ class Pet:
     def update_mood(self):
         if self.happiness >= 80 and self.hunger <= 50 and elf.energy >= 50:
             self.mood = ("Super Happy", "😍")
-            return
-        if self.hunger >= 70:
+            return self.mood
+        if self.hunger >= 80:
             self.mood = ("Very Hungry", "😠")
-        if self.energy <= 30:
+        if self.energy <= 15:
             self.mood = ("Very Tired", "🫩")
-        if self.happiness <= 30:
+        if self.happiness <= 20:
             self.mood = ("Sad and Lonely", "🥺")
         if self.happiness >= 80:
             self.mood = ("Super Happy", "😍")
