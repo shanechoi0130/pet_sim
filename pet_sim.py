@@ -156,7 +156,6 @@ class VirtualPetGame:
         print(
             f"Current Status: Hunger: {self.pet.hunger} Energy: {self.pet.energy} Happiness: {self.pet.happiness}"
         )
-        event = random.randint(1, 10)
 
         self.update_game_screen()
         self.check_game_status()
